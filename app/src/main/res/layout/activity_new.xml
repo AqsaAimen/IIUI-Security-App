@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background5"
+    tools:context=".NewActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to IIUI Security App"
+        android:layout_marginLeft="10sp"
+        android:textColor="#EEECF4"
+        android:layout_marginTop="20sp"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"
+        android:textColor="#F1EFF8"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="10sp"
+        android:text="Welcome to our COVID secure environment ,by using this app you are helping us to create COVID secure environment .Keeping you informed  and your friends and collagues safe and protected .
+        for more information or to report symptoms click on the below link
+        "/>
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="104dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="250sp"
+        android:layout_marginTop="5sp"
+        android:background="#24D1B5"
+        android:paddingLeft="25sp"
+        android:text="OK"
+        android:textColor="#EDF2F1"
+        android:textSize="30sp" />
+
+</LinearLayout>

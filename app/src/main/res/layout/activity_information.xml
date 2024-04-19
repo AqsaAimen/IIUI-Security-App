@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relate"
+    tools:context=".ActivityInformation">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/appbar3"/>
+
+        <TextView
+            android:layout_below="@+id/relate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65sp"
+            android:layout_marginLeft="15sp"
+            android:text="International Islamic University Islamabad"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#309B6C"
+            android:id="@+id/iiui"
+            />
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="396dp"
+            android:layout_height="236dp"
+            android:layout_below="@id/iiui"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/iiuib" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text2"
+            android:textSize="20sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:textColor="#1B1B1B"
+            android:text="The foundation of the Islamic University, Islamabad was laid on the first day of the fifteenth century Hijrah i.e. Muharram 1, 1401 (November 11,1980). This landmark of the beginning of the new Century symbolizes the aspirations and hopes of the Muslim Ummah for an Islamic renaissance. The university was created to produce scholars and practitioners who are imbued with Islamic ideology,
+     whose character and personality conforms to the teachings of Islam,
+     and who are capable to cater to the economic, social, political,
+     technological and intellectual needs of the Muslim Ummah.
+     Islamic Research Institute and few other units like Iqbal International Institute for Research &amp; Dialogue, Dawah Academy, Shariah Academy and Institute of Professional Development are situated within the premises of majestic Faisal Mosque (spread over an area of 189,705 square meters) which is a symbol of International Islamic brotherhood and unity. In conformance with the Islamic precepts,
+      the university provides academic services to men and women through
+    separate campuses for each segment. These campuses, along with the central library, administrative wing and hostels, are located in sector H-10."
+            android:layout_below="@id/image"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/library"
+            android:id="@+id/image2"
+            android:layout_below="@id/text2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text3"
+            android:textSize="20sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_below="@id/image2"
+            android:text="IIUI Central library is the most beautiful library of islamabad it facilitates its students.
+Students can get each and every book from there"
+            android:textColor="#1B1B1B"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image3"
+            android:layout_below="@id/text3"
+            android:src="@drawable/female1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text4"
+            android:textSize="20sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_below="@id/image3"
+            android:text="A separate campus for the female students of International Islamic University Islamabad was established in the year 2000.
+The Female students avail similar facilities as enjoyed by their male counterparts. Over 11500 female students are enrolled in different faculties of the Female Campus.
+ In recent years there has been rapid growth in qualitative and quantitative terms.
+The total strength of female teaching staff (excluding visiting faculty members) is 260 and non teaching staff is about 420."
+            android:textColor="#1B1B1B"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image4"
+            android:layout_below="@id/text4"
+            android:src="@drawable/admin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text5"
+            android:textSize="20sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:text="The Government of Pakistan very generously allotted Islamabad, Sector H-10, comprising 704 acres of land, to enable the University to construct and
+            shift to its own new premises and meet its ever increasing needs.
+At present three academic blocks and five hostel blocks have been completed and all University faculties are now functioning in new buildings with effect from January, 2002.
+In addition one academic block is under construction.
+As envisaged in the Master Plan of the new campus, the University will be completed in phases of which Stage-I of Phase-I has reached culmination while stage-II is
+ nearing completion. When constructed in its entirety, the University will accommodate 30,000 students (20,000 male and 10,000 female) in 22-25 faculties. In addition,
+ there will be 57 hostel blocks for male students and
+28 for female and partial accommodation for teaching/research and administrative staff.
+The layout of the campus and all the buildings to be constructed there have been designed by renowned architects. Due regard has been paid to landscaping and providing a suitable background to all the structures. The architectural is a judicious blend of the modern and traditional Islamic styles, in keeping with the spirit of the International University.
+Apart from the administrative blocks and teaching departments, the buildings of the various institutes and academies and the hostels, there is to be a beautiful central mosque and a unique central library. Provision has been made for a commercial center and shops for the resident staff and the students. Altogether the total campus when complete will be an attractive addition to the existing architectural charms of Islamabad."
+            android:layout_below="@id/image4"
+            android:textColor="#151415"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.iiuisecurityapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".Search"></activity>
+        <activity android:name=".VehiclesLeaving" />
+        <activity android:name=".VehicleEntrance" />
+        <activity android:name=".TransportActivity" />
+        <activity android:name=".What" />
+        <activity android:name=".Notification" />
+        <activity android:name=".UserAddress" />
+        <activity android:name=".Userprofile" />
+        <activity android:name=".Mapbox" />
+        <activity android:name=".CampusSafety" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBONMR1OtRTyNqHbKQAbqwgSGASyVSwoPY" />
+
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".Emergency" />
+        <activity android:name=".Ambulance" />
+        <activity android:name=".NewActivity" />
+        <activity android:name=".Services" />
+        <activity android:name=".Report_A_tip" />
+        <activity android:name=".ActivityInformation" />
+        <activity android:name=".AidAlert" />
+        <activity android:name=".createprofile" />
+        <activity
+            android:name=".MenuActivity"
+            android:parentActivityName=".iiuisecurityfeatures" />
+        <activity
+            android:name=".iiuisecurityfeatures"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".ConfirmPassword"
+            android:parentActivityName=".ForgotpasswordActivity" />
+        <activity
+            android:name=".ForgotpasswordActivity"
+            android:parentActivityName=".ConfirmPassword" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

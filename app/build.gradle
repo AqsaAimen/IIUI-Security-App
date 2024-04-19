@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.example.iiuisecurityapp"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.1') {
+        //exclude group: 'group_name', module: 'module_name'
+        transitive = true
+
+    }
+    
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.1'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.3'
+    implementation 'androidx.navigation:navigation-ui:2.3.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:23.0.1'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-firestore:17.1.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:29.0.0_alpha3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:29.0.0_alpha1'
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:26.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+    implementation 'com.google.android.material:material:1.4.0-alpha02'
+    implementation 'com.google.android.material:material:1.1.0-beta01'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

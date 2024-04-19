@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserAddress">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#151515"
+        android:hint="Enter your Home address"
+        android:id="@+id/address"
+        android:textSize="25sp"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+        android:layout_marginTop="140sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#151515"
+        android:hint="Enter your City"
+        android:id="@+id/city"
+        android:textSize="25sp"
+        android:layout_below="@id/address"
+        android:drawableLeft="@drawable/ic_baseline_location_city_24"
+        android:layout_marginTop="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#151515"
+        android:hint="Enter your Phone no"
+        android:id="@+id/phoneno"
+        android:textSize="25sp"
+        android:layout_below="@id/city"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:layout_marginTop="20sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="Save address"
+        android:id="@+id/save2"
+        android:layout_below="@id/phoneno"
+        android:backgroundTint="#309B6C"
+        android:textSize="30sp"
+        android:textColor="#EDF5F4"/>
+</RelativeLayout>

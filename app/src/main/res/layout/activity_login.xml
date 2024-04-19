@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".LoginActivity"
+    >
+  <ImageView
+      android:layout_width="150sp"
+      android:layout_height="150sp"
+      android:paddingTop="10sp"
+      android:id="@+id/logo"
+      android:paddingLeft="5sp"
+      android:src="@drawable/iiui"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hellowiiui"
+        android:paddingTop="20sp"
+        android:paddingRight="20sp"
+        android:paddingLeft="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5sp"
+        android:textSize="20sp"
+        android:textColor="#309B6C"
+        android:text="INTERNATIONAL ISLAMIC UNIVERSITY ISLAMABAD"
+        android:layout_below="@id/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cometosignin"
+        android:layout_below="@id/hellowiiui"
+        android:paddingTop="15sp"
+        android:paddingLeft="15sp"
+        android:text="Sign in to continue"
+        android:textSize="20sp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:paddingTop="20sp"
+                android:paddingLeft="10sp"
+                android:layout_below="@id/cometosignin"
+                android:hint="Enter Username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:id="@+id/username50"
+                          android:layout_below="@id/username"
+                         android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:paddingTop="20sp"
+        android:paddingLeft="10sp"
+        android:layout_below="@id/username"
+        app:passwordToggleEnabled="true"
+        android:hint="Enter Password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/userpass50"
+            android:layout_below="@id/password"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_below="@id/password">
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/password"
+        android:textColor="#E6E6F3"
+        android:paddingLeft="20sp"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="#309B6C"
+        android:paddingRight="20sp"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:text="Forgot password?"
+        android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_below="@id/forgot"
+            android:layout_marginTop="3sp"
+            android:backgroundTint="#309B6C"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="#EDF3E8"
+            android:textSize="20sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:id="@+id/signup"
+            android:text="NEW USER? SIGN UP"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="2sp"
+            android:backgroundTint="#309B6C"
+            android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>
+</RelativeLayout>

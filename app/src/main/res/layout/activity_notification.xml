@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notification">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/th" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="345dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="345dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Message">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/chanel11btn"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#309B6C"
+        android:text="Send to IIUI Admin" />
+
+    <Button
+        android:id="@+id/chanel12btn"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="sendOnChannel12"
+        android:backgroundTint="#309B6C"
+        android:text="Send to IIUI Teachers" />
+
+    <Button
+        android:id="@+id/chanel13btn"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#309B6C"
+        android:onClick="sendOnChannel13"
+        android:text="Send to IIUI Students" />
+</LinearLayout>

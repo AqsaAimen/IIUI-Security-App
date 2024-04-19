@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background5"
+    android:orientation="vertical"
+    tools:context=".Emergency">
+    <include
+        layout="@layout/appbar"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logobtn"
+        android:src="@drawable/zz"/>
+    <Button
+        android:layout_marginTop="120sp"
+        android:text="Press for Information"
+        android:textSize="20sp"
+        android:backgroundTint="#57C28C"
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"/>
+
+    <ImageButton
+        android:id="@+id/location"
+        android:layout_width="133dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="35sp"
+        android:layout_marginTop="272sp"
+        android:background="#57C28C"
+        android:src="@drawable/ic_baseline_my_location_24" />
+
+    <ImageButton
+        android:id="@+id/alert"
+        android:layout_width="80dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="270sp"
+        android:layout_toRightOf="@id/location"
+        android:background="#57C28C"
+        android:src="@drawable/ic_baseline_rss_feed_24" />
+
+    <ImageButton
+        android:id="@+id/acknowledge"
+        android:layout_width="80dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="270sp"
+        android:layout_toRightOf="@id/alert"
+        android:background="#57C28C"
+        android:src="@drawable/ic_baseline_emoji_people_24" />
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="63sp"
+        android:layout_marginTop="0sp"
+        android:src="@drawable/ic_baseline_done_241"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/view2"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alert"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="0sp"
+        android:layout_toRightOf="@+id/view"
+        android:src="@drawable/ic_baseline_done_241"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/view3"
+        android:layout_marginTop="0sp"
+        android:layout_toRightOf="@id/view2"
+        android:visibility="invisible"
+        android:src="@drawable/ic_baseline_done_241" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewrr"
+        android:textSize="20sp"
+        android:textColor="#EEF4F3"
+        android:layout_below="@+id/view"
+        />
+
+    <TextView
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/textviewrr"
+        android:layout_marginTop="49dp"
+        android:background="#93E3CD"
+        android:text="Send Alert"
+        android:textColor="#EBE8F2"
+        android:textSize="27sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/b1"
+        android:id="@+id/alert1"
+        android:layout_marginTop="15sp"
+        android:background="#E59868"
+        android:text="Send Alert"
+        android:textColor="#EBE8F2"
+        android:textSize="27sp" />
+</RelativeLayout>

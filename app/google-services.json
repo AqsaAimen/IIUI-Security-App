@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "145904649577",
+    "project_id": "iiuisecurityapp",
+    "storage_bucket": "iiuisecurityapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145904649577:android:fb2d45afda9b4eaf3629f8",
+        "android_client_info": {
+          "package_name": "com.example.iiuisecurityapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145904649577-7vck840ktj9rtg800el9skn178a00kap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iiuisecurityapp",
+            "certificate_hash": "75660b0ab9f64c2eb44b640aba525d008dd3d0f1"
+          }
+        },
+        {
+          "client_id": "145904649577-98kuegl9t1g2ubqk98950j6lgu19h01j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCewVw2QoLbL5tDL8qaXrF4hZpbA_lO_nc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145904649577-98kuegl9t1g2ubqk98950j6lgu19h01j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

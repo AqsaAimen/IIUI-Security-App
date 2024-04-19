@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/google_maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="587dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="106dp"
+        android:layout_height="68dp"
+        android:id="@+id/switchbtn7"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="280sp"
+        android:layout_marginTop="40sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_marginTop="580dp"
+        android:gravity="bottom"
+        android:textColor="#101111"
+        android:textSize="20sp" />
+</RelativeLayout>
